@@ -11,7 +11,7 @@ import UIKit
 
 class FourViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
 
-    var dataSource = ["Label","Button","UIView","UITextField","UIImageView"]
+    var dataSource = ["Label详情","Button详情","UIView详情","UITextField详情","UIImageView详情"]
     
     var tableView: UITableView = UITableView()
     
