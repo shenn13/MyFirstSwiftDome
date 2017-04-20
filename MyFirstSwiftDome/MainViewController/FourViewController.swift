@@ -34,6 +34,11 @@ class FourViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         return self.dataSource.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 80
+    }
+    
     //tableViewCell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -47,7 +52,7 @@ class FourViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         cell?.textLabel?.text = "\(self.dataSource[indexPath.row])"
         cell?.textLabel?.textAlignment = NSTextAlignment.center
-        
+        cell?.textLabel?.font = UIFont.systemFont(ofSize: 18)
         return cell!
     }
     
