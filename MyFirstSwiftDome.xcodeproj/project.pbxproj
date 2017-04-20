@@ -13,14 +13,20 @@
 		648E36621EA845E2008344C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648E36601EA845E2008344C7 /* LaunchScreen.storyboard */; };
 		648E366D1EA845E2008344C7 /* MyFirstSwiftDomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E366C1EA845E2008344C7 /* MyFirstSwiftDomeTests.swift */; };
 		648E36781EA845E2008344C7 /* MyFirstSwiftDomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36771EA845E2008344C7 /* MyFirstSwiftDomeUITests.swift */; };
-		648E36861EA84614008344C7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36851EA84614008344C7 /* MainViewController.swift */; };
 		648E368D1EA855F0008344C7 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E368C1EA855F0008344C7 /* LabelViewController.swift */; };
 		648E368F1EA85F18008344C7 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E368E1EA85F18008344C7 /* ButtonViewController.swift */; };
 		648E36911EA85FDE008344C7 /* ViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36901EA85FDE008344C7 /* ViewViewController.swift */; };
 		648E36931EA86057008344C7 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36921EA86057008344C7 /* TextFieldViewController.swift */; };
 		648E36951EA86090008344C7 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36941EA86090008344C7 /* ImageViewController.swift */; };
-		648E36971EA860FF008344C7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36961EA860FF008344C7 /* BaseViewController.swift */; };
 		648E36991EA875AB008344C7 /* 书包看书.png in Resources */ = {isa = PBXBuildFile; fileRef = 648E36981EA875AB008344C7 /* 书包看书.png */; };
+		648E36AB1EA8AC20008344C7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36A71EA8AC20008344C7 /* FirstViewController.swift */; };
+		648E36AC1EA8AC20008344C7 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36A81EA8AC20008344C7 /* FourViewController.swift */; };
+		648E36AD1EA8AC20008344C7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36A91EA8AC20008344C7 /* SecondViewController.swift */; };
+		648E36AE1EA8AC20008344C7 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36AA1EA8AC20008344C7 /* ThirdViewController.swift */; };
+		648E36B31EA8AC50008344C7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36B01EA8AC50008344C7 /* BaseViewController.swift */; };
+		648E36B41EA8AC50008344C7 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36B11EA8AC50008344C7 /* NavigationViewController.swift */; };
+		648E36B51EA8AC50008344C7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36B21EA8AC50008344C7 /* TabBarViewController.swift */; };
+		648E36B71EA8AEEF008344C7 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36B61EA8AEEF008344C7 /* Header.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,14 +59,20 @@
 		648E36731EA845E2008344C7 /* MyFirstSwiftDomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstSwiftDomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		648E36771EA845E2008344C7 /* MyFirstSwiftDomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstSwiftDomeUITests.swift; sourceTree = "<group>"; };
 		648E36791EA845E2008344C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		648E36851EA84614008344C7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		648E368C1EA855F0008344C7 /* LabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		648E368E1EA85F18008344C7 /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		648E36901EA85FDE008344C7 /* ViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewViewController.swift; sourceTree = "<group>"; };
 		648E36921EA86057008344C7 /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 		648E36941EA86090008344C7 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		648E36961EA860FF008344C7 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		648E36981EA875AB008344C7 /* 书包看书.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "书包看书.png"; sourceTree = "<group>"; };
+		648E36A71EA8AC20008344C7 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		648E36A81EA8AC20008344C7 /* FourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
+		648E36A91EA8AC20008344C7 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		648E36AA1EA8AC20008344C7 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		648E36B01EA8AC50008344C7 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		648E36B11EA8AC50008344C7 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		648E36B21EA8AC50008344C7 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		648E36B61EA8AEEF008344C7 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,14 +123,15 @@
 		648E36561EA845E1008344C7 /* MyFirstSwiftDome */ = {
 			isa = PBXGroup;
 			children = (
+				648E36AF1EA8AC50008344C7 /* OtherViewController */,
+				648E36A61EA8AC20008344C7 /* MainViewController */,
 				648E368B1EA855D6008344C7 /* Button */,
 				648E368A1EA855CE008344C7 /* Label */,
 				648E36871EA855C4008344C7 /* UIImageView */,
 				648E36881EA855C4008344C7 /* UITextField */,
 				648E36891EA855C4008344C7 /* UIView */,
 				648E36571EA845E2008344C7 /* AppDelegate.swift */,
-				648E36851EA84614008344C7 /* MainViewController.swift */,
-				648E36961EA860FF008344C7 /* BaseViewController.swift */,
+				648E36B61EA8AEEF008344C7 /* Header.swift */,
 				648E365B1EA845E2008344C7 /* Main.storyboard */,
 				648E365E1EA845E2008344C7 /* Assets.xcassets */,
 				648E36601EA845E2008344C7 /* LaunchScreen.storyboard */,
@@ -184,6 +197,27 @@
 				648E368E1EA85F18008344C7 /* ButtonViewController.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		648E36A61EA8AC20008344C7 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				648E36A71EA8AC20008344C7 /* FirstViewController.swift */,
+				648E36A91EA8AC20008344C7 /* SecondViewController.swift */,
+				648E36AA1EA8AC20008344C7 /* ThirdViewController.swift */,
+				648E36A81EA8AC20008344C7 /* FourViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		648E36AF1EA8AC50008344C7 /* OtherViewController */ = {
+			isa = PBXGroup;
+			children = (
+				648E36B01EA8AC50008344C7 /* BaseViewController.swift */,
+				648E36B11EA8AC50008344C7 /* NavigationViewController.swift */,
+				648E36B21EA8AC50008344C7 /* TabBarViewController.swift */,
+			);
+			path = OtherViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,14 +358,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				648E36B41EA8AC50008344C7 /* NavigationViewController.swift in Sources */,
+				648E36AD1EA8AC20008344C7 /* SecondViewController.swift in Sources */,
 				648E368F1EA85F18008344C7 /* ButtonViewController.swift in Sources */,
+				648E36B31EA8AC50008344C7 /* BaseViewController.swift in Sources */,
 				648E36581EA845E2008344C7 /* AppDelegate.swift in Sources */,
 				648E36931EA86057008344C7 /* TextFieldViewController.swift in Sources */,
 				648E36951EA86090008344C7 /* ImageViewController.swift in Sources */,
+				648E36AB1EA8AC20008344C7 /* FirstViewController.swift in Sources */,
 				648E36911EA85FDE008344C7 /* ViewViewController.swift in Sources */,
-				648E36971EA860FF008344C7 /* BaseViewController.swift in Sources */,
-				648E36861EA84614008344C7 /* MainViewController.swift in Sources */,
 				648E368D1EA855F0008344C7 /* LabelViewController.swift in Sources */,
+				648E36B71EA8AEEF008344C7 /* Header.swift in Sources */,
+				648E36B51EA8AC50008344C7 /* TabBarViewController.swift in Sources */,
+				648E36AC1EA8AC20008344C7 /* FourViewController.swift in Sources */,
+				648E36AE1EA8AC20008344C7 /* ThirdViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

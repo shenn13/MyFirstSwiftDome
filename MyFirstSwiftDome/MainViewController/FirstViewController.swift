@@ -1,5 +1,5 @@
 //
-//  BaseViewController.swift
+//  FirstViewController.swift
 //  MyFirstSwiftDome
 //
 //  Created by shen on 17/4/20.
@@ -8,31 +8,23 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        
-//        自定义
-//        let button = UIButton(frame:CGRect(x:0,y:0,width:40,height:40))
-//        button.setTitle("返回", for:UIControlState.normal)
-//        button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-//        let backItem = UIBarButtonItem.init(customView:button)
-//        self.navigationItem.rightBarButtonItem = backItem
-        
-        
-        let backItem = UIBarButtonItem.init(image:UIImage(named:"backImage"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(BaseViewController.popDoBack))
-        self.navigationItem.leftBarButtonItem = backItem
-        
+       setSearchBtn()
         
         // Do any additional setup after loading the view.
     }
     
-    func popDoBack(){
+    private func setSearchBtn() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Feed_SearchBtn_18x18_"), style: .plain, target: self, action: #selector(search))
+    }
+    
+    func search() {
         
-        self.navigationController?.popViewController(animated: true)
+        print("点击了Item搜索按钮")
     }
 
     override func didReceiveMemoryWarning() {

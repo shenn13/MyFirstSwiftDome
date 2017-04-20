@@ -1,5 +1,6 @@
+
 //
-//  MainViewController.swift
+//  FourViewController.swift
 //  MyFirstSwiftDome
 //
 //  Created by shen on 17/4/20.
@@ -8,28 +9,27 @@
 
 import UIKit
 
-class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+class FourViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+
+    var dataSource = ["Label","Button","UIView","UITextField","UIImageView"]
     
-  var dataSource = ["Label","Button","UIView","UITextField","UIImageView"]
+    var tableView: UITableView = UITableView()
     
-  var tableView: UITableView = UITableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.title = "学习";
         
-        self.navigationController?.navigationBar.barTintColor = UIColor.black
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
-        
-        
         tableView = UITableView(frame:CGRect(x:0,y:0,width:self.view.frame.size.width,height:self.view.frame.size.height), style:UITableViewStyle.plain)
         tableView.delegate = self
         tableView.dataSource = self
         self.view .addSubview(tableView)
 
+        
+        // Do any additional setup after loading the view.
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataSource.count
     }
@@ -86,8 +86,7 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
     }
 
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -12,8 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -21,11 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         self.window?.backgroundColor = UIColor.white
         
-        let VC = MainViewController()
+        let tabBarVC = TabBarViewController()
         
-        let naVC = UINavigationController.init(rootViewController: VC)
-        
-        self.window?.rootViewController = naVC
+        self.window?.rootViewController = tabBarVC
         
         self.window?.makeKeyAndVisible()
         
