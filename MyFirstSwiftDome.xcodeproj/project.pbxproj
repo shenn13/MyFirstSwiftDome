@@ -15,6 +15,11 @@
 		648E36781EA845E2008344C7 /* MyFirstSwiftDomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36771EA845E2008344C7 /* MyFirstSwiftDomeUITests.swift */; };
 		648E36861EA84614008344C7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36851EA84614008344C7 /* MainViewController.swift */; };
 		648E368D1EA855F0008344C7 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E368C1EA855F0008344C7 /* LabelViewController.swift */; };
+		648E368F1EA85F18008344C7 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E368E1EA85F18008344C7 /* ButtonViewController.swift */; };
+		648E36911EA85FDE008344C7 /* ViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36901EA85FDE008344C7 /* ViewViewController.swift */; };
+		648E36931EA86057008344C7 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36921EA86057008344C7 /* TextFieldViewController.swift */; };
+		648E36951EA86090008344C7 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36941EA86090008344C7 /* ImageViewController.swift */; };
+		648E36971EA860FF008344C7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36961EA860FF008344C7 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		648E36791EA845E2008344C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		648E36851EA84614008344C7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		648E368C1EA855F0008344C7 /* LabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
+		648E368E1EA85F18008344C7 /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		648E36901EA85FDE008344C7 /* ViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewViewController.swift; sourceTree = "<group>"; };
+		648E36921EA86057008344C7 /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		648E36941EA86090008344C7 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		648E36961EA860FF008344C7 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,7 @@
 				648E36891EA855C4008344C7 /* UIView */,
 				648E36571EA845E2008344C7 /* AppDelegate.swift */,
 				648E36851EA84614008344C7 /* MainViewController.swift */,
+				648E36961EA860FF008344C7 /* BaseViewController.swift */,
 				648E365B1EA845E2008344C7 /* Main.storyboard */,
 				648E365E1EA845E2008344C7 /* Assets.xcassets */,
 				648E36601EA845E2008344C7 /* LaunchScreen.storyboard */,
@@ -135,6 +146,7 @@
 		648E36871EA855C4008344C7 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
+				648E36941EA86090008344C7 /* ImageViewController.swift */,
 			);
 			path = UIImageView;
 			sourceTree = "<group>";
@@ -142,6 +154,7 @@
 		648E36881EA855C4008344C7 /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
+				648E36921EA86057008344C7 /* TextFieldViewController.swift */,
 			);
 			path = UITextField;
 			sourceTree = "<group>";
@@ -149,6 +162,7 @@
 		648E36891EA855C4008344C7 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				648E36901EA85FDE008344C7 /* ViewViewController.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -164,6 +178,7 @@
 		648E368B1EA855D6008344C7 /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				648E368E1EA85F18008344C7 /* ButtonViewController.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -305,7 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				648E368F1EA85F18008344C7 /* ButtonViewController.swift in Sources */,
 				648E36581EA845E2008344C7 /* AppDelegate.swift in Sources */,
+				648E36931EA86057008344C7 /* TextFieldViewController.swift in Sources */,
+				648E36951EA86090008344C7 /* ImageViewController.swift in Sources */,
+				648E36911EA85FDE008344C7 /* ViewViewController.swift in Sources */,
+				648E36971EA860FF008344C7 /* BaseViewController.swift in Sources */,
 				648E36861EA84614008344C7 /* MainViewController.swift in Sources */,
 				648E368D1EA855F0008344C7 /* LabelViewController.swift in Sources */,
 			);
@@ -558,6 +578,7 @@
 				648E367E1EA845E2008344C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		648E367F1EA845E2008344C7 /* Build configuration list for PBXNativeTarget "MyFirstSwiftDomeTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +587,7 @@
 				648E36811EA845E2008344C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		648E36821EA845E2008344C7 /* Build configuration list for PBXNativeTarget "MyFirstSwiftDomeUITests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +596,7 @@
 				648E36841EA845E2008344C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

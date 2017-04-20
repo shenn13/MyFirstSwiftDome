@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LabelViewController: UIViewController {
+class LabelViewController: BaseViewController {
     
     var titleText: String?
     
@@ -17,9 +17,14 @@ class LabelViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        self.navigationItem.title = titleText
+        
+        
         let label = UILabel(frame:CGRect(x:10,y:164,width:300,height:40))
         label.text = "Welcome to study Swift ！1123131sfdfsdfdsf232"
+        
         label.backgroundColor = UIColor.yellow
+        
         self.view.addSubview(label)
         
         // label的字体颜色
@@ -29,6 +34,7 @@ class LabelViewController: UIViewController {
         label.shadowColor=UIColor.gray //灰色阴影
         //        label.shadowOffset = CGSize(width:-5,height:5)//阴影的偏移量
         label.numberOfLines = 0
+        
         label.adjustsFontSizeToFitWidth = true //当文字超出标签宽度时，自动调整文字大小，使其不被截断
         
         
@@ -57,6 +63,8 @@ class LabelViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 14)
         // 设置字体时，同时设置大小
         //        label.font = UIFont(name:"您好！", size:14)
+        
+        
         
         // Do any additional setup after loading the view.
     }

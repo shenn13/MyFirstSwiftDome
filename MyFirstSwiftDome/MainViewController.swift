@@ -22,12 +22,11 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         self.navigationController?.navigationBar.barTintColor = UIColor.black
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
         
+        
         tableView = UITableView(frame:CGRect(x:0,y:0,width:self.view.frame.size.width,height:self.view.frame.size.height), style:UITableViewStyle.plain)
         tableView.delegate = self
         tableView.dataSource = self
         self.view .addSubview(tableView)
-        
-       
 
     }
 
@@ -57,14 +56,32 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         tableView .deselectRow(at: indexPath, animated: true)
         
-        
         if (indexPath.row == 0) {
             
-            let vc = LabelViewController()
+            let labelVC = LabelViewController()
+            labelVC.titleText = "\(self.dataSource[indexPath.row])"
+            self.navigationController?.pushViewController(labelVC, animated: false)
+        }else if (indexPath.row == 1) {
             
-            vc.titleText = "\(self.dataSource[indexPath.row])"
+            let buttonVC = ButtonViewController()
+            buttonVC.titleText = "\(self.dataSource[indexPath.row])"
+            self.navigationController?.pushViewController(buttonVC, animated: false)
+        }else if (indexPath.row == 2) {
             
-            self.navigationController?.pushViewController(vc, animated: false)
+            let viewVC = ViewViewController()
+            viewVC.titleText = "\(self.dataSource[indexPath.row])"
+            self.navigationController?.pushViewController(viewVC, animated: false)
+            
+        }else if (indexPath.row == 3) {
+            
+            let textFieldVC = TextFieldViewController()
+            textFieldVC.titleText = "\(self.dataSource[indexPath.row])"
+            self.navigationController?.pushViewController(textFieldVC, animated: false)
+        }else if (indexPath.row == 4) {
+            
+            let imageVC = ImageViewController()
+            imageVC.titleText = "\(self.dataSource[indexPath.row])"
+            self.navigationController?.pushViewController(imageVC, animated: false)
         }
         
     }
