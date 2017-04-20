@@ -8,14 +8,35 @@
 
 import UIKit
 
+let kScreenWidth = UIScreen.main.bounds.size.width
+let kScreenHeight = UIScreen.main.bounds.size.height
+
 class ViewViewController: BaseViewController {
     
     var titleText:String?
+//    var myView: UIView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
           self.navigationItem.title = titleText
 
+        
+        let myView = UIView()
+        myView.frame = CGRect(x:10,y:74,width:kScreenWidth - 20,height:kScreenHeight - 20 - 64)
+        myView.backgroundColor = UIColor.yellow
+        self.view.addSubview(myView)
+        
+        
+        //    圆角属性
+        myView.layer.masksToBounds = true;
+        //    圆角半径
+        myView.layer.cornerRadius = 20;
+        //    圆角边框颜色
+        myView.layer.borderColor = UIColor.blue.cgColor;
+        //    圆角边框宽度
+        myView.layer.borderWidth = 10;
+        
+        
         // Do any additional setup after loading the view.
     }
 

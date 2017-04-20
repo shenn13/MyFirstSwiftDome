@@ -14,10 +14,12 @@ class ButtonViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.automaticallyAdjustsScrollViewInsets = true
+        
         self.navigationItem.title = titleText
         
-        let button = UIButton(frame:CGRect(x:10,y:164,width:300,height:40))
+        let button = UIButton(frame:CGRect(x:10,y:64,width:300,height:40))
         
        // 按钮的文字设置
         button.setTitle("普通状态", for:UIControlState.normal) //普通状态下的文字
@@ -30,7 +32,7 @@ class ButtonViewController: BaseViewController {
 //        button.setTitleColor(UIColor.gray,for:.disabled) //禁用状态下文字的颜色
         
       //  按钮背景颜色设置
-//        button.backgroundColor=UIColor.black
+//        button.backgroundColor = UIColor.black
         
        // 按钮文字图标的设置
         button.setImage(UIImage(named:"icon1"),for:.normal)  //设置图标
@@ -45,11 +47,20 @@ class ButtonViewController: BaseViewController {
         //不传递触摸对象（即点击的按钮）
 //        button.addTarget(self,action:#selector(clicked),for:.touchUpInside)
         
-     
-        
         //传递触摸对象（即点击的按钮），需要在定义action参数时，方法名称后面带上冒号
-        button.addTarget(self,action:#selector(buttonClicked(_:)),forControlEvents:.TouchUpInside)
-      
+        button.addTarget(self,action:#selector(buttonClicked(_:)),for:.touchUpInside)
+        
+        button.tag = 3
+        
+        //    button圆角属性
+        button.layer.masksToBounds = true;
+        //    button圆角半径
+        button.layer.cornerRadius = 10;
+        //    button圆角边框颜色
+        button.layer.borderColor = UIColor.blue.cgColor;
+        //    button圆角边框宽度
+        button.layer.borderWidth = 1;
+
         
         // Do any additional setup after loading the view.
     }
@@ -60,13 +71,12 @@ class ButtonViewController: BaseViewController {
         
     }
    
-    
-    func buttonClicked(button:UIButton){
+    func buttonClicked(_ button:UIButton){
         
-        print("按钮被点击~~~~~~")
+        print("按钮被点击~~~~~--%ld------~",button.tag)
         
     }
-
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

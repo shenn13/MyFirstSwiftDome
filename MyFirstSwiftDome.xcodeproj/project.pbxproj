@@ -20,6 +20,7 @@
 		648E36931EA86057008344C7 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36921EA86057008344C7 /* TextFieldViewController.swift */; };
 		648E36951EA86090008344C7 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36941EA86090008344C7 /* ImageViewController.swift */; };
 		648E36971EA860FF008344C7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36961EA860FF008344C7 /* BaseViewController.swift */; };
+		648E36991EA875AB008344C7 /* 书包看书.png in Resources */ = {isa = PBXBuildFile; fileRef = 648E36981EA875AB008344C7 /* 书包看书.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		648E36921EA86057008344C7 /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 		648E36941EA86090008344C7 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		648E36961EA860FF008344C7 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		648E36981EA875AB008344C7 /* 书包看书.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "书包看书.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				648E365E1EA845E2008344C7 /* Assets.xcassets */,
 				648E36601EA845E2008344C7 /* LaunchScreen.storyboard */,
 				648E36631EA845E2008344C7 /* Info.plist */,
+				648E36981EA875AB008344C7 /* 书包看书.png */,
 			);
 			path = MyFirstSwiftDome;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			files = (
 				648E36621EA845E2008344C7 /* LaunchScreen.storyboard in Resources */,
 				648E365F1EA845E2008344C7 /* Assets.xcassets in Resources */,
+				648E36991EA875AB008344C7 /* 书包看书.png in Resources */,
 				648E365D1EA845E2008344C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
