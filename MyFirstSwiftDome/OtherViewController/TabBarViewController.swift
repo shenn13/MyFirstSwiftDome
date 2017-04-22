@@ -37,14 +37,36 @@ class TabBarViewController: UITabBarController {
         addChildViewController(NavigationViewController(rootViewController:childController))
     }
 
-
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
         
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    //    private func shouldAutorotate() -> Bool {
+    //
+    //        if (self.selectedViewController?.isEqual(self.viewControllers?[0]))! {
+    //            return (self.selectedViewController?.shouldAutorotate)!;
+    //        }
+    //        return false
+    //    }
+    //    private func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+    //
+    //        if (self.selectedViewController?.isEqual(self.viewControllers?[0]))! {
+    //            return (self.selectedViewController?.supportedInterfaceOrientations)!
+    //        }
+    //        return .portrait
+    //    }
 
+    
+    
     /*
     // MARK: - Navigation
 

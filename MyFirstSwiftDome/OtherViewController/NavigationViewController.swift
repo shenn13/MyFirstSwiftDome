@@ -44,12 +44,32 @@ class NavigationViewController: UINavigationController {
         
         self.popViewController(animated: true)
     }
+    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    //    private func shouldAutorotate() -> Bool {
+    //        if (self.topViewController?.isKind(of:UIViewController.self))! {
+    //            return (self.topViewController?.shouldAutorotate)!;
+    //        }
+    //        return false
+    //    }
+    //    private func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+    //        if (self.topViewController?.isKind(of:UIViewController.self))! {
+    //            return (self.topViewController?.supportedInterfaceOrientations)!;
+    //        }
+    //        return .portrait
+    //    }
+    
+    //    private func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
+    //        return .landscapeLeft
+    //    }
+    
+    
+    
     /*
     // MARK: - Navigation
 

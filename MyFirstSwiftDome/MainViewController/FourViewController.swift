@@ -11,7 +11,7 @@ import UIKit
 
 class FourViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
 
-    var dataSource = ["Label详情","Button详情","UIView详情","UITextField详情","UIImageView详情"]
+    var dataSource = ["Label详情","Button详情","UIView详情","UITextField详情","UIImageView详情","横竖屏切换","CollectionView"]
     
     var tableView: UITableView = UITableView()
     
@@ -61,34 +61,48 @@ class FourViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         tableView .deselectRow(at: indexPath, animated: true)
         
+        //Label
         if (indexPath.row == 0) {
-            
             let labelVC = LabelViewController()
             labelVC.titleText = "\(self.dataSource[indexPath.row])"
             self.navigationController?.pushViewController(labelVC, animated: false)
-        }else if (indexPath.row == 1) {
+        }//Button
+        else if (indexPath.row == 1) {
             
             let buttonVC = ButtonViewController()
             buttonVC.titleText = "\(self.dataSource[indexPath.row])"
             self.navigationController?.pushViewController(buttonVC, animated: false)
-        }else if (indexPath.row == 2) {
+        }//UIView
+        else if (indexPath.row == 2) {
             
             let viewVC = ViewViewController()
             viewVC.titleText = "\(self.dataSource[indexPath.row])"
             self.navigationController?.pushViewController(viewVC, animated: false)
             
-        }else if (indexPath.row == 3) {
+        }//UITextField
+        else if (indexPath.row == 3) {
             
             let textFieldVC = TextFieldViewController()
             textFieldVC.titleText = "\(self.dataSource[indexPath.row])"
             self.navigationController?.pushViewController(textFieldVC, animated: false)
-        }else if (indexPath.row == 4) {
+        }//UIimageView
+        else if (indexPath.row == 4) {
             
             let imageVC = ImageViewController()
             imageVC.titleText = "\(self.dataSource[indexPath.row])"
             self.navigationController?.pushViewController(imageVC, animated: false)
+        }//横竖屏切换
+        else if (indexPath.row == 5) {
+            
+            let OrientationVC = ControlOrientationVC()
+            OrientationVC.orientation = ScreenOrientation.landscapeLeft
+            self.present(OrientationVC, animated: true, completion: nil)
         }
         
+        else if (indexPath.row == 6) {
+            let CollectionVC = CollectionViewController()
+            self.navigationController?.pushViewController(CollectionVC, animated: true)
+        }
     }
 
 

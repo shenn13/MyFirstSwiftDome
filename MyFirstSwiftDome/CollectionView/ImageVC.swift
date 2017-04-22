@@ -1,30 +1,26 @@
 //
-//  FirstViewController.swift
+//  ImageVC.swift
 //  MyFirstSwiftDome
 //
-//  Created by shen on 17/4/20.
+//  Created by shen on 17/4/22.
 //  Copyright © 2017年 shen. All rights reserved.
 //
 
 import UIKit
 
-class FirstViewController: UIViewController {
-
+class ImageVC: BaseViewController {
+    
+    var picStr : String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       setSearchBtn()
+        let imageView = UIImageView(image:UIImage(named:picStr!))
+        imageView.frame = CGRect(x:0,y:64,width:self.view.bounds.size.width,height:self.view.bounds.size.height - 64)
+        self.view.addSubview(imageView)
         
+
         // Do any additional setup after loading the view.
-    }
-    //设置item
-    private func setSearchBtn() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Feed_SearchBtn_18x18_"), style: .plain, target: self, action: #selector(search))
-    }
-    
-    func search() {
-        
-        print("点击了Item搜索按钮")
     }
 
     override func didReceiveMemoryWarning() {
