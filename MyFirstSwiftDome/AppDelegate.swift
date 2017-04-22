@@ -6,6 +6,20 @@
 //  Copyright © 2017年 shen. All rights reserved.
 //
 
+
+/**
+ 1.OC-Swift混编
+ 2.OC使用Swift
+ 2.1 Build Settings->Packaging->Defines Module == Yes
+ 2.2 在需要使用Swift 的地方 #import "工程名-Swift.h" 如本工程 #import "SUV-Swift.h"
+ 2.3 即可调用
+ 3.Swift使用OC
+ 3.1 在桥接文件中导入需要使用的OC头文件
+ 3.2 即可使用
+ */
+
+
+
 import UIKit
 
 @UIApplicationMain
