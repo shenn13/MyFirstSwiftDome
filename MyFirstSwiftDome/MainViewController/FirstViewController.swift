@@ -17,6 +17,8 @@ class FirstViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    
+    
     //设置item
     private func setSearchBtn() {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Feed_SearchBtn_18x18_"), style: .plain, target: self, action: #selector(search))
