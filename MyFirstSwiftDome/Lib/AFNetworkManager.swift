@@ -12,8 +12,10 @@ import Alamofire
 import SVProgressHUD
 
 struct AFError: Error {
+    
     var localizedDescription: String
     var code: Int
+    
 }
 
 struct AFNetworkManager {
@@ -22,7 +24,7 @@ struct AFNetworkManager {
     static func get(_ urlString: String, param: [String: Any]?, success: @escaping (JSON) -> Void, failure: @escaping (AFError) -> Void) -> Void {
         
         let realUrl = api.baseUrl + urlString
-        print(realUrl)
+        
         Alamofire.request(realUrl, method: .get, parameters: param).responseJSON { (response) in
             
             guard response.result.isSuccess else {
@@ -30,12 +32,10 @@ struct AFNetworkManager {
                 failure(AFError(localizedDescription: "加载失败", code: 0))
                 return
             }
- 
             let json = JSON(data: response.data!)
             if json["code"] == 200 {
                 success(json)
             } else {
-//                QL2("code == \(json["code"])")
                 failure(AFError(localizedDescription: "请求错误", code: json["code"].intValue))
             }
         }
