@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6404B5701EC5A95F008C4C18 /* BBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6404B56F1EC5A95F008C4C18 /* BBannerView.swift */; };
 		648E36581EA845E2008344C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E36571EA845E2008344C7 /* AppDelegate.swift */; };
 		648E365D1EA845E2008344C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648E365B1EA845E2008344C7 /* Main.storyboard */; };
 		648E365F1EA845E2008344C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 648E365E1EA845E2008344C7 /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 /* Begin PBXFileReference section */
 		430B7C04059A1BC67667A17C /* Pods-MyFirstSwiftDome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstSwiftDome.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFirstSwiftDome/Pods-MyFirstSwiftDome.release.xcconfig"; sourceTree = "<group>"; };
 		5E63749C93DB8233FF142805 /* Pods-MyFirstSwiftDome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstSwiftDome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFirstSwiftDome/Pods-MyFirstSwiftDome.debug.xcconfig"; sourceTree = "<group>"; };
+		6404B56F1EC5A95F008C4C18 /* BBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBannerView.swift; sourceTree = "<group>"; };
 		648E36541EA845E1008344C7 /* MyFirstSwiftDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstSwiftDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		648E36571EA845E2008344C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		648E365C1EA845E2008344C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 		648E36B81EA8B51A008344C7 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				6404B56F1EC5A95F008C4C18 /* BBannerView.swift */,
 				64F9C6A31EC457EC00A27953 /* AFNetworkManager.swift */,
 			);
 			path = Lib;
@@ -596,6 +599,7 @@
 				648E36951EA86090008344C7 /* ImageViewController.swift in Sources */,
 				64F9C55A1EC4429500A27953 /* Api.swift in Sources */,
 				64F9C5551EC43F1200A27953 /* SecondCollectionViewCell.swift in Sources */,
+				6404B5701EC5A95F008C4C18 /* BBannerView.swift in Sources */,
 				648E36AB1EA8AC20008344C7 /* FirstViewController.swift in Sources */,
 				648E36911EA85FDE008344C7 /* ViewViewController.swift in Sources */,
 				648E368D1EA855F0008344C7 /* LabelViewController.swift in Sources */,

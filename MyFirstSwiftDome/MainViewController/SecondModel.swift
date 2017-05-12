@@ -36,6 +36,7 @@ class SecondModel: NSObject {
         
         
         init(target: [String: AnyObject]) {
+            
             description = target["description"] as? String
             url = target["url"] as? String
             purchase_url = target["purchase_url"] as? String

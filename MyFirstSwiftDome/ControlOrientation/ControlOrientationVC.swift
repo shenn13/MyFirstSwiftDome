@@ -40,7 +40,9 @@ class ControlOrientationVC: BaseViewController {
         if self.orientation == ScreenOrientation.landscapeLeft {
             
             return UIInterfaceOrientationMask.landscapeLeft
+            
         }else{
+            
             return UIInterfaceOrientationMask.portrait
         }
     }

@@ -19,6 +19,7 @@ class ViewViewController: BaseViewController {
 
         
         let myView = UIView()
+        
         myView.frame = CGRect(x:10,y:74,width:kScreenWidth - 20,height:kScreenHeight - 20 - 64)
         myView.backgroundColor = UIColor.yellow
         self.view.addSubview(myView)

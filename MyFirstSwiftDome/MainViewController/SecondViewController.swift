@@ -55,7 +55,9 @@ class SecondViewController: UIViewController,UICollectionViewDelegate,UICollecti
             ]
         
         AFNetworkManager.get(api.danPinListUrl, param: param, success: { (response) in
-         
+            
+            print(response)
+            
             if offset == 0{
                 
                 self.listModels.removeAll()
@@ -132,51 +134,4 @@ class SecondViewController: UIViewController,UICollectionViewDelegate,UICollecti
     */
 
 }
-
-
-
-//// MARK: -- UICollectionViewDelegate
-//extension DTDanPinController: UICollectionViewDelegate {
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        QL2("collection")
-//        
-//        let detailController = WebController()
-//        detailController.urlString = listModels[indexPath.row].dataModel?.url
-//        detailController.title = "商品详情"
-//        navigationController?.pushViewController(detailController, animated: true)
-//        
-//    }
-//}
-
-//
-//// MARK: -- UICollectionViewDataSource
-//extension SecondViewController: UICollectionViewDataSource {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return self.listModels.count
-//    }
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        
-//        let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "SecondCollectionViewCell", for: indexPath) as! SecondCollectionViewCell
-//        let model = self.listModels[indexPath.row]
-//        cell.model = model
-//        
-//        print(model)
-//        
-//        return cell
-//        
-//    }
-//}
-//
-//// MARK: -- UICollectionViewDelegateFlowLayout
-//extension SecondViewController: UICollectionViewDelegateFlowLayout {
-//    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-//        
-//        return UIEdgeInsetsMake(10, 10, 10, 10)
-//    }
-//    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: kScreenWidth / 2 - 15, height: 190)
-//    }
-//}
 

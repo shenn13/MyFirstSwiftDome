@@ -22,6 +22,7 @@ class SecondCollectionViewCell: UICollectionViewCell {
         didSet {
             
             titleLab.text = model?.dataModel?.name
+            
             imageView.kf.setImage(with: URL(string: (model?.dataModel?.cover_image_url)!))
             
             likeLab.setTitle(String(describing: model!.dataModel!.favorites_count!), for: .normal)

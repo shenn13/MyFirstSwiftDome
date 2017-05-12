@@ -8,12 +8,52 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UIViewController,BBannerViewDelegate, BBannerViewDataSource {
 
+    var bbannerView: BBannerView!
+    
+    var  dataArr = ["pic1.jpeg","pic2.jpeg","pic3.jpeg","pic4.jpeg","pic5.jpeg","pic6.jpeg","pic7.jpeg","pic8.jpeg","pic9.jpeg","pic10.jpeg"]
+    
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.automaticallyAdjustsScrollViewInsets = false
+        
+        bbannerView = BBannerView(frame: CGRect(x: 0, y: 64, width: UIScreen.main.bounds.size.width, height: 150))
+        
+        bbannerView.dataSource = self
+        bbannerView.delegate = self
+        bbannerView.backgroundColor = UIColor.yellow
+        view.addSubview(bbannerView)
+        
+        bbannerView.reloadData()
+        bbannerView.startAutoScroll(timeIntrval: 4)
+        
+    }
+    
+    // MARK: - BBanerViewDataSource
+    
+    func numberOfItems() -> Int {
+        
+        return dataArr.count
+    }
+    
+    func viewForItem(bannerView: BBannerView, index: Int) -> UIView {
+        
+        let imageView = UIImageView(frame: bannerView.bounds)
+        
+        imageView.image = UIImage(named: dataArr[index])
+        
+        return imageView
+    }
+    
+    // MARK: - BBannerViewDelegate
+    
+    func didSelectItem(index: Int) {
+        
+        print("banner1 index: \(index)")
     }
 
     override func didReceiveMemoryWarning() {
